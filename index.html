@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--Alumno: Carolina Isabel Pineda Delgado
+  Carnet: PD19007
+  Grupo de trabajo: 05-->
+<head>
+	<title>Ejemplo web api</title>
+	<meta charset="utf-8"  />
+<LINK REL=StyleSheet HREF="estilo.css" TYPE="text/css" MEDIA=screen>
+<script src="codigo.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carolina Isabel Pineda Delgado">
+    <meta name="keywords" content="API's, API, usp de apis, gia 61, guia 61-b,guia 61b">
+    <meta name="description" content="Trabajo de laboratorio: Guia 61b TPI115-2021 index">
+</head>
+
+<body >
+ <h1>GUIA 61-C</h1><br>
+     <section id="bloque">
+	 <section class="info">
+		
+		<ul><h3>DATOS PERSONALES</h3>
+			<li>Alumno: Carolina Isabel Pineda Delgado</li>
+			<li>Carnet: PD19007</li>
+			<li>Grupo de trabajo: 05</li>
+		</ul>
+		<br/>
+		<br/><br/>
+		
+	</section>
+		<div>
+			<script>obtenerProductos();</script>
+			<h3>INGRESAR PRODUCTO</h3>
+			<form name="prod" id="prod">
+				<table>
+					<tr>
+						<td><label>Título: </label></td>
+						<td><input type="text" name="titulo" id="titulo"></td>
+						<td><label>Precio: </label></td>
+						<td><input type="text" name="precio" id="precio"></td>
+					</tr>
+					<tr>
+						
+					</tr>
+					<tr>
+						<td><label>Descripción: </label></td>
+						<td colspan="3"><input type="text" name="descripcion" id="descripcion"></td>
+					</tr>
+					<tr>
+						<td><label>Url de imagen: </label></td>
+						<td colspan="3"><input type="text" name="imagen" id="imagen"></td>
+					</tr>
+					<tr>
+						<td><label>Categoría: </label></td>
+						<td colspan="2"><select name="categoria" name="categoria" id="categoria">
+							<option>caballeros</option>
+							<option>damas</option>
+							<option>joyeria</option>
+							<option>electronicos</option>
+						</select></td>
+					</tr>
+				</table>
+				
+			</form>
+			<button onclick="guardarProducto(ti(),pre(),des(),im(),ca());">Guardar</button>  <button onclick="obtenerProductos();">Mostrar Productos</button>
+			
+		</div>
+
+		<br/>
+		<div id="listado" style="display:none;">
+		<form name="filtroprods" id="filtroprods">
+			<h3>LISTADO DE PRODUCTOS</h3>
+			<p>Seleccione Categorias</p>
+			<input type="checkbox" id="c1" value="c1" checked> Electronicos
+			<input type="checkbox" id="c2" value="c2" checked> Joyería
+			<input type="checkbox" id="c3" value="c3" checked> Ropa Caballero
+			<input type="checkbox" id="c4" value="c4" checked> Ropa Dama
+			<p>Opciones</p>
+			<ol><li>Click en la imagen para Acercamiento</li>
+			<li>Click en precio para ordenar Asc o Desc</li></ol>
+			<br/>
+			<table id="tabla" border="1">
+				<thead>
+				<tr>
+					<th id="id">id</th>
+					<th id="foto">foto</th>
+					<th  id="price">price</th>
+					<th>title</th><th>description</th>
+					<th id="cate">category</th>
+					<th id="opcion">options</th>
+				</tr>
+				</thead>
+				<tbody id="tbody"></tbody>
+			</table>
+			
+		</form>
+		</div>
+	 </section>
+	
+     
+</body>
+</html>

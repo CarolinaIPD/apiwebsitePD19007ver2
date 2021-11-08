@@ -1,0 +1,133 @@
+/*Alumno: Carolina Isabel Pineda Delgado
+  Carnet: PD19007
+  Grupo de trabajo: 05*/
+*{
+    padding: 0;
+    margin: 0;
+}
+#bloque{
+    padding: 5%;
+    background-color: rgba(45, 180, 180, 0.596);
+    border-radius: 30px;
+}
+
+body{
+    padding: 3%;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    font-size: 60px;
+    color: rgb(0, 0, 80);
+    text-align: center;
+    font-weight: bold;
+}
+h3{
+    font-size: 30px;
+    color: rgb(0, 0, 22);
+    text-align: left;
+}
+ul li{
+    font-size: 20px;
+    text-align: left;
+    list-style: none;
+    padding-left: 2%;
+    line-height: 2em;
+}
+button{
+    border-radius: 10px;
+    width: 10em;
+    height: 3em;
+    color: cornsilk;
+    background-color: rgb(0, 0, 22);
+    border-color:rgb(0, 0, 22) ;
+}
+button:hover{
+    color: rgb(215, 215, 228);
+    background-color: rgb(0, 88, 88);
+    border-color:rgb(0, 88, 88);
+}
+#tabla{
+    background-color: none;
+    border-radius: 10%;
+    border-collapse: collapse;   
+    width:auto;
+    margin:auto;
+    text-align: center;
+}
+#tabla #price{
+    width: 100px;
+    text-align: center;
+}
+#tabla #foto{
+    width: 150px;
+    text-align: center;
+}
+#tabla #cate{
+    width: 175px;
+    text-align: center;
+}
+#tabla #opcion{
+    width: 175px;
+    text-align: center;
+}
+#tabla #id{
+    width: 50px;
+    text-align: center;
+}
+#filtroprods{
+    font-size: 20px;
+    text-align: left;
+    line-height: 2em;
+}
+#filtroprods p{
+    font-weight: bold;
+}
+#filtroprods ol{
+    padding-left: 2%;
+}
+
+img {
+    width:3cm;
+    height:3cm;
+}
+thead{
+    text-transform: uppercase;
+    text-align: center;
+}
+th#price {cursor:pointer;}
+
+#prod input, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+#prod button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #prod button:hover {
+    background-color: #45a049;
+  }
+  
+
+
+/*si chequea muestra los productos sin cheque desaparecen los productos*/
+input#c1:checked ~ table tbody tr.c1 { display: table-row; }
+input#c1:not(checked) ~ table tbody tr.c1 { display: none; }
+input#c2:checked ~ table tbody tr.c2 { display: table-row; }
+input#c2:not(checked) ~ table tbody tr.c2 { display: none; }
+input#c3:checked ~ table tbody tr.c3 { display: table-row; }
+input#c3:not(checked) ~ table tbody tr.c3 { display: none; }
+input#c4:checked ~ table tbody tr.c4 { display: table-row; }
+input#c4:not(checked) ~ table tbody tr.c4 { display: none; }
